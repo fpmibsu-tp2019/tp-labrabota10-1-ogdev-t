@@ -15,6 +15,7 @@
 		9C39E0EF22A1BE9A00E6CD82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C39E0ED22A1BE9A00E6CD82 /* LaunchScreen.storyboard */; };
 		9C39E0FA22A1BE9B00E6CD82 /* checkITinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C39E0F922A1BE9B00E6CD82 /* checkITinTests.swift */; };
 		9C39E10522A1BE9B00E6CD82 /* checkITinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C39E10422A1BE9B00E6CD82 /* checkITinUITests.swift */; };
+		9C39E15622A1C6E500E6CD82 /* SightTransporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C39E15522A1C6E500E6CD82 /* SightTransporter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		9C39E10022A1BE9B00E6CD82 /* checkITinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = checkITinUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C39E10422A1BE9B00E6CD82 /* checkITinUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = checkITinUITests.swift; sourceTree = "<group>"; };
 		9C39E10622A1BE9B00E6CD82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C39E15522A1C6E500E6CD82 /* SightTransporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SightTransporter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 		9C39E11222A1BEE400E6CD82 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				9C39E15522A1C6E500E6CD82 /* SightTransporter.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C39E15622A1C6E500E6CD82 /* SightTransporter.swift in Sources */,
 				9C39E0E422A1BE8B00E6CD82 /* ViewController.swift in Sources */,
 				9C39E0E222A1BE8B00E6CD82 /* AppDelegate.swift in Sources */,
 				9C39E0EA22A1BE8C00E6CD82 /* checkITin.xcdatamodeld in Sources */,
