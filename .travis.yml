@@ -1,0 +1,9 @@
+language: objective-c  
+osx_image: xcode10.1
+branches:
+  - development
+  - master
+before_install: brew update
+xcode_project: checkITin/checkITin.xcodeproj 
+xcode_scheme: checkITin
+xcode_destination: platform=iOS Simulator,OS=13.1,name=iPhone 8
