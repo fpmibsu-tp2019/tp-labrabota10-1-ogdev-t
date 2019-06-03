@@ -17,15 +17,37 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logoMain" translatesAutoresizingMaskIntoConstraints="NO" id="XmI-Qb-tce">
+                                <rect key="frame" x="27" y="93" width="313" height="307"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Cv-J1-wX8">
+                                <rect key="frame" x="121" y="493" width="132" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.44303328766106831" green="0.39346909154615239" blue="0.92058078765000007" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
+                                <state key="normal" title="GET STARTED">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btStart:" destination="ukb-bq-C4m" eventType="touchUpInside" id="9Lm-uG-IOf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.86233681440353394" green="0.95293730497360229" blue="0.94496625661849976" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <rect key="contentStretch" x="0.65000000000000002" y="0.0" width="1" height="1"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="fYk-m2-6j6"/>
                     <connections>
+                        <outlet property="btStart" destination="0Cv-J1-wX8" id="IOM-Z9-22l"/>
+                        <outlet property="logoImage" destination="XmI-Qb-tce" id="jXf-cb-bP1"/>
                         <segue destination="5Cu-QH-l7r" kind="show" id="iNN-BP-quL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="ukb-bq-C4m" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1072.8" y="133.5832083958021"/>
         </scene>
@@ -100,6 +122,9 @@
             <point key="canvasLocation" x="276" y="134"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logoMain" width="1200" height="1200"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="or9-WQ-inr"/>
     </inferredMetricsTieBreakers>

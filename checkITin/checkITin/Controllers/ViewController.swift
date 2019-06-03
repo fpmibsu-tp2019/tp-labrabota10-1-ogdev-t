@@ -10,11 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var logoImage: UIImageView!
+    
+    @IBOutlet weak var btStart: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        //let  cBT: customButton;
         // Do any additional setup after loading the view, typically from a nib.
+        //btStart.layer.cornerRadius = 24;
+        
     }
-
 
 }
 
