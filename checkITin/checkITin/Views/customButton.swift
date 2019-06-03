@@ -11,11 +11,14 @@ import UIKit
 class customButton: UIButton {
     
     @IBAction func btStart(_ sender: UIButton) {
-        sender.layer.cornerRadius = 20;
+        //чисто для проверки, работает ли
+        self.layer.cornerRadius = 50;
+        self.setTitle("upBut", for: UIControl.State.normal);
+        self.tintColor = UIColor.black;
     }
     
     /*
-    // Only override draw() if you perform custom drawing.
+    // Only override draw() if you performв custom drawing.
     // An empty implementation adversely affects performance during animation.
     override func draw(_ rect: CGRect) {
         // Drawing code

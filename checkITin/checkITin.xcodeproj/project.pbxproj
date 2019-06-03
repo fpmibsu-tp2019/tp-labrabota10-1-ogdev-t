@@ -19,6 +19,9 @@
 		9C39E15822A24E7A00E6CD82 /* AchieventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C39E15722A24E7A00E6CD82 /* AchieventViewController.swift */; };
 		9C39E15A22A24E8F00E6CD82 /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C39E15922A24E8F00E6CD82 /* DescriptionViewController.swift */; };
 		9C39E15C22A24EDA00E6CD82 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C39E15B22A24EDA00E6CD82 /* MapViewController.swift */; };
+		D024153922A525E900505BC3 /* MenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D024153822A525E900505BC3 /* MenuCollectionViewCell.swift */; };
+		D024153B22A5287100505BC3 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = D024153A22A5287100505BC3 /* Menu.swift */; };
+		D024154322A55ACE00505BC3 /* SightStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = D024154222A55ACE00505BC3 /* SightStruct.swift */; };
 		D08D754B22A2887F0024A50C /* customButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08D754A22A2887F0024A50C /* customButton.swift */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +61,9 @@
 		9C39E15722A24E7A00E6CD82 /* AchieventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchieventViewController.swift; sourceTree = "<group>"; };
 		9C39E15922A24E8F00E6CD82 /* DescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
 		9C39E15B22A24EDA00E6CD82 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		D024153822A525E900505BC3 /* MenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCell.swift; sourceTree = "<group>"; };
+		D024153A22A5287100505BC3 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		D024154222A55ACE00505BC3 /* SightStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SightStruct.swift; sourceTree = "<group>"; };
 		D08D754A22A2887F0024A50C /* customButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -142,6 +148,8 @@
 			isa = PBXGroup;
 			children = (
 				9C39E15522A1C6E500E6CD82 /* SightTransporter.swift */,
+				D024153A22A5287100505BC3 /* Menu.swift */,
+				D024154222A55ACE00505BC3 /* SightStruct.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -151,6 +159,7 @@
 			children = (
 				9C39E0ED22A1BE9A00E6CD82 /* LaunchScreen.storyboard */,
 				9C39E0E522A1BE8C00E6CD82 /* Main.storyboard */,
+				D024153822A525E900505BC3 /* MenuCollectionViewCell.swift */,
 				D08D754A22A2887F0024A50C /* customButton.swift */,
 			);
 			path = Views;
@@ -299,8 +308,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C39E15822A24E7A00E6CD82 /* AchieventViewController.swift in Sources */,
+				D024154322A55ACE00505BC3 /* SightStruct.swift in Sources */,
 				9C39E15622A1C6E500E6CD82 /* SightTransporter.swift in Sources */,
+				D024153922A525E900505BC3 /* MenuCollectionViewCell.swift in Sources */,
 				9C39E0E422A1BE8B00E6CD82 /* ViewController.swift in Sources */,
+				D024153B22A5287100505BC3 /* Menu.swift in Sources */,
 				9C39E15A22A24E8F00E6CD82 /* DescriptionViewController.swift in Sources */,
 				D08D754B22A2887F0024A50C /* customButton.swift in Sources */,
 				9C39E0E222A1BE8B00E6CD82 /* AppDelegate.swift in Sources */,
@@ -488,6 +500,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.bsu.famcs.acs.checkITin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ENABLE_BATCH_MODE = NO;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -505,6 +518,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.bsu.famcs.acs.checkITin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ENABLE_BATCH_MODE = NO;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
