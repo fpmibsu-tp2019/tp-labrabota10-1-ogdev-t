@@ -41,6 +41,7 @@ import UIKit
     // Only override draw() if you performв custom drawing.
     // An empty implementation adversely affects performance during animation.
     override func draw(_ rect: CGRect) {
+        
     }
  
 
