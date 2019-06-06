@@ -12,7 +12,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var logoImage: UIImageView!
     
-    @IBOutlet weak var btStart: UIButton!
+    @IBOutlet weak var btStart: CustomButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,5 +22,8 @@ class ViewController: UIViewController {
         
     }
 
+    @IBAction func tappedStartButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "achieveSeque", sender: nil)
+    }
 }
 

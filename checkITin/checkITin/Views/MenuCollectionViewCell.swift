@@ -11,38 +11,48 @@ import UIKit
 
 //класс того, что находится в ячейке нашего CollectionView
 
-class MenuCollectionViewCell: UICollectionViewCell {
+@IBDesignable class MenuCollectionViewCell: UICollectionViewCell {
+    
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var descriptionCell: UILabel!
     @IBOutlet weak var btInvisible: UIButton!
     
-    var menu: Menu? {
+    var menu: SightStruct? {
         didSet{
-            descriptionCell.text = menu?.myDescription
+            descriptionCell.text = menu?.sightShortDescription
             if let image = menu?.imageName {
                 imageView.image = UIImage (named: image)
             }
+            
             self.backgroundColor = UIColor.white
-            self.layer.cornerRadius = 24
+            self.layer.cornerRadius = 25
             self.layer.borderWidth = 1
             
             btInvisible.layer.borderWidth = 1
-            btInvisible.layer.cornerRadius = 23
+            btInvisible.layer.cornerRadius = 25
             
+            
+            if menu!.visited {
+                let image = UIImage(named: "galochka")!
+                btInvisible.setImage(image, for:UIControl.State.normal)
+            }
+            else {
+                btInvisible.setImage(nil, for:UIControl.State.normal)
+            }
         }
     }
-    var isPressed = 1
     
     @IBAction func btInvisiblePress(_ sender: Any) {
-        if isPressed == 1
-        {
-            btInvisible.setImage(nil, for:UIControl.State.normal)
-            isPressed = 0
-        }
-        else {
+        if menu!.visited {
             let image = UIImage(named: "galochka")!
             btInvisible.setImage(image, for:UIControl.State.normal)
-            isPressed = 1
+            menu!.visited = false
+            SetupDB.setVisited(sightName: (menu?.name)!, isTrue: false)
+        }
+        else {
+            btInvisible.setImage(nil, for:UIControl.State.normal)
+            menu!.visited = true
+            SetupDB.setVisited(sightName: (menu?.name)!, isTrue: true)
         }
         
     }
