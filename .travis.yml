@@ -7,7 +7,3 @@ before_install: brew update
 xcode_project: checkITin/checkITin.xcodeproj 
 xcode_scheme: checkITin
 xcode_destination: platform=iOS Simulator,OS=13.1,name=iPhone 8
-<<<<<<< HEAD
-# tp-labrabota10-1-ogdev-t
-=======
->>>>>>> b3ac6db7d8eb8bab8b8f5637f798bf0c42ed63a3
