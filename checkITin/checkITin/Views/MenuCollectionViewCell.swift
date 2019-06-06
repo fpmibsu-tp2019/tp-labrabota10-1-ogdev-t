@@ -31,7 +31,6 @@ import UIKit
             btInvisible.layer.borderWidth = 1
             btInvisible.layer.cornerRadius = 25
             
-            
             if menu!.visited {
                 let image = UIImage(named: "galochka")!
                 btInvisible.setImage(image, for:UIControl.State.normal)
